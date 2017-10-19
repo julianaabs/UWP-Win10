@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="LayoutChallenge.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LayoutChallenge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="10,0,0,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="BraveCloud LTDA" Grid.Row="0" Grid.ColumnSpan="3" FontSize="48" Margin="0,0,0,20"  />
+
+        <TextBlock Text="First Name:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" />
+        <TextBlock Text="Last Name:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" />
+        <TextBlock Text="Email:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"  />
+
+        <TextBox Name="firstNameTextBox" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" Width="Auto" />
+        <TextBox Name="lastNameTextBox" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10" Width="Auto" />
+        <TextBox Name="emailTextBox" Grid.Row="3" Grid.Column="1" Margin="0,0,0,10" Width="Auto" />
+
+        <Button VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Content="Save" Margin="10" />
+
+    </Grid>
+</Page>
